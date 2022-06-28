@@ -3,6 +3,19 @@
 -- fpm.package: gsalunke.github.io/cv
 zip: github.com/gsalunke/cv/archive/refs/heads/main.zip
 
--- fpm.dependency: fifthtry.github.io/doc-site as ds
+-- fpm.dependency: fifthtry.github.io/doc-site as ft
+-- fpm.dependency: fifthtry.github.io/inter
+-- fpm.dependency: fifthtry.github.io/bling
+-- fpm.dependency: fifthtry.github.io/resume
 
--- fpm.auto-import: ds
+-- fpm.auto-import: fifthtry.github.io/bling/quote-1
+-- fpm.auto-import: fifthtry.github.io/resume/resume-4 as cv
+-- fpm.auto-import: fifthtry.github.io/resume/resume as resume
+
+
+-- fpm.auto-import: fifthtry.github.io/inter as inter
+-- fpm.auto-import: gsalunke.github.io/cv/assets
+
+-- fpm.auto-import: gsalunke.github.io/cv/FPM/config
+
+-- fpm.auto-import: ft

@@ -1,0 +1,118 @@
+-- import: fpm
+
+--- table-title:
+
+--- table-cell:
+$loop$: $component as $obj
+name: $obj.name 
+description: $obj.description
+url: $obj.url
+
+
+
+-- ftd.column table-title:
+string title-1: Component Name
+string title-2: Description
+margin-top: $fpm.space.space-8
+width: fill
+
+
+--- ftd.row:
+width: fill
+
+--- ftd.text: $title-1
+role: $fpm.type.heading-small
+color: $fpm.color.main.info.text
+padding-vertical: $fpm.space.space-4
+border-top: 1
+border-bottom: 1
+border-color: $fpm.color.main.cta-tertiary.border
+width: fill
+
+--- ftd.text: $title-2
+role: $fpm.type.heading-small
+color: $fpm.color.main.info.text
+padding-vertical: $fpm.space.space-4
+border-top: 1
+border-bottom: 1
+border-color: $fpm.color.main.cta-tertiary.border
+width: fill
+
+
+
+
+
+
+
+
+
+
+-- ftd.column table-cell:
+string name: 
+string description: 
+string url: 
+width: fill
+
+
+--- ftd.row:
+width: fill
+border-bottom: 1
+border-color: $fpm.color.main.text
+padding-vertical: $fpm.space.space-4
+id: row-main
+
+--- ftd.text: $name
+role: $fpm.type.copy-relaxed
+color: $fpm.color.main.text
+width: fill
+
+--- container: row-main
+
+--- ftd.column:
+width: fill
+
+--- ftd.text: $description
+role: $fpm.type.copy-relaxed
+color: $fpm.color.main.text
+width: fill
+
+--- ftd.text: $url
+role: $fpm.type.copy-relaxed
+color: $fpm.color.main.text
+width: fill
+
+
+
+
+
+
+
+
+
+
+-- record component-data:
+string name:
+string description:
+string url:
+
+-- component-data list component:
+
+-- component:
+name: `badge` 
+description: `badge` can be used a labeling component.
+url: [Click here for more details.](https://fifthtry.github.io/bling/badge/)
+
+-- component:
+name: `message-left` & `message-right`
+description: `message-left` OR `message-right` gives you text chatting experince via using `FTD` lang.
+url: [Click here for more details.](https://fifthtry.github.io/bling/chat/)
+
+-- component:
+name: `tip`
+description: `tip` is a new conversation experince via using `FTD` lang. `tip` can be used as part of any component. Show some tips to your users via using `tip` component.
+url: [Click here for more details.](https://fifthtry.github.io/bling/tip/)
+
+-- component:
+name: `quote`
+description: If you want to highlight some text OR quote, use `-- quote`. It also can be used as part of blog posts to highlight a quote.
+url: [Click here for more details.](https://fifthtry.github.io/bling/quote/)

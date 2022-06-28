@@ -2,6 +2,8 @@
 
 -- fpm.package: gsalunke.github.io/cv
 zip: github.com/gsalunke/cv/archive/refs/heads/main.zip
+base: https://raw.githubusercontent.com/gsalunke/cv/main
+
 
 -- fpm.dependency: fifthtry.github.io/doc-site as ft
 -- fpm.dependency: fifthtry.github.io/inter
